@@ -1,4 +1,5 @@
 'use strict';
+require('env2')('.env')
 const fetch = require('isomorphic-fetch');
 const apiRoot = 'http://ws.audioscrobbler.com/2.0/';
 const apiKey = process.env.API_KEY;
