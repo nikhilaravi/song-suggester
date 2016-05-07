@@ -1,0 +1,36 @@
+{
+  "name": "song-suggester",
+  "version": "1.0.0",
+  "description": "A lambda function to retrieve song suggestions from the last.fm api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node ./node_modules/dpl/dpl.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhilaravi/song-suggester.git"
+  },
+  "keywords": [
+    "AWS",
+    "Lambda",
+    "Node.js",
+    "LastFM"
+  ],
+  "author": "Nikhila Ravi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikhilaravi/song-suggester/issues"
+  },
+  "homepage": "https://github.com/nikhilaravi/song-suggester#readme",
+  "devDependencies": {
+    "dpl": "^3.0.1"
+  },
+  "files_to_deploy": [
+    "index.js",
+    "package.json",
+  ],
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
