@@ -1,12 +1,13 @@
 'use strict';
-require('env2')('.env')
+require('env2')('.env');
 const fetch = require('isomorphic-fetch');
 const apiRoot = 'http://ws.audioscrobbler.com/2.0/';
 const apiKey = process.env.API_KEY;
 
 exports.handler = function (event, context, callback) {
   const max = event.limit ? event.limit : 10;
-  const url = `${apiRoot}?method=track.search&track=${event['query']}&limit=${max}&api_key=${apiKey}&format=json`;
+  const query = event.query;
+  const url = `${apiRoot}?method=track.search&track=${query}&limit=${max}&api_key=${apiKey}&format=json`;
   fetch(url, {
     method: 'GET',
     headers: {

@@ -24,8 +24,7 @@
   },
   "homepage": "https://github.com/nikhilaravi/song-suggester#readme",
   "devDependencies": {
-    "dpl": "^3.0.1",
-    "env2": "^2.0.7"
+    "dpl": "^3.0.1"
   },
   "files_to_deploy": [
     "index.js",
@@ -33,6 +32,7 @@
     ".env"
   ],
   "dependencies": {
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^2.2.1",
+    "env2": "^2.0.7"
   }
 }
